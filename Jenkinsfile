@@ -13,7 +13,7 @@ pipeline {
                 echo 'Testing..'
                 script {
                     def csvContent = "JobName,Tag\n"
-                    sh """ \"\"${csvContent}\"\" \"${csvContent}\" """
+                    sh """ echo \"\"${csvContent}\" -- \"${csvContent}\"\" """
                 }
             }
         }
